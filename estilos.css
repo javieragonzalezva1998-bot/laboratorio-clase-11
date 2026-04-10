@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease;
+  }
+  
+  .calculadora {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    width: 320px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  #display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: #f1f1f1;
+    box-sizing: border-box;
+  }
+  
+  .historial {
+    max-height: 100px;
+    overflow-y: auto;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .contenedor-botones {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .numeros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex: 3;
+  }
+  
+  .operadores {
+    display: grid;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  .boton {
+    border: none;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: #e0e0e0;
+    transition: transform 0.15s ease, background 0.2s ease;
+  }
+  
+  .boton:hover {
+    background: #d5d5d5;
+  }
+  
+  .boton:active {
+    transform: scale(0.95);
+  }
+  
+  .boton-operador {
+    background: #ff9500;
+    color: white;
+  }
+  
+  .boton-operador:hover {
+    background: #e68600;
+  }
+  
+  .boton-limpiar {
+    background: #ff4d4d;
+    color: white;
+  }
+  
+  .boton-limpiar:hover {
+    background: #e63c3c;
+  }
+  
+  .boton-igual {
+    background: #28a745;
+    color: white;
+  }
+  
+  .boton-igual:hover {
+    background: #218838;
+  }
+  
+  .modo-btn {
+    margin-bottom: 10px;
+    border: none;
+    background: #222;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  body.oscuro {
+    background: #121212;
+  }
+  
+  body.oscuro .calculadora {
+    background: #1e1e1e;
+    color: white;
+  }
+  
+  body.oscuro #display {
+    background: #2c2c2c;
+    color: white;
+  }
+  
+  body.oscuro .boton {
+    background: #333;
+    color: white;
+  }
+  
+  body.oscuro .boton:hover {
+    background: #444;
+  }
+  
+  body.oscuro .historial {
+    color: #bbb;
+  }

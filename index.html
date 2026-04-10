@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Calculadora JS</title>
+ <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+ <div class="calculadora">
+ <h2>Calculadora</h2>
+ <button class="modo-btn" onclick="toggleModo()">🌙/☀️</button>
+ <input type="text" id="display" readonly>
+ <div id="historial" class="historial"></div>
+ <div class="contenedor-botones">
+ <div class="numeros">
+ <button class="boton" onclick="agregarNumero('7')">7</button>
+ <button class="boton" onclick="agregarNumero('8')">8</button>
+ <button class="boton" onclick="agregarNumero('9')">9</button>
+ <button class="boton" onclick="agregarNumero('4')">4</button>
+ <button class="boton" onclick="agregarNumero('5')">5</button>
+ <button class="boton" onclick="agregarNumero('6')">6</button>
+ <button class="boton" onclick="agregarNumero('1')">1</button>
+ <button class="boton" onclick="agregarNumero('2')">2</button>
+ <button class="boton" onclick="agregarNumero('3')">3</button>
+ <button class="boton" onclick="agregarNumero('0')">0</button>
+ &nbsp;
+ <button class="boton" onclick="agregarNumero('.')">.</button>
+ <button class="boton boton-limpiar" onclick="limpiar()">C</button>
+ &nbsp;
+ <button class="boton boton-igual" onclick="calcular()">=</button>
+</div>
+        <div class="operadores">
+    <!-- Operadores y borrar -->
+    <button class="boton boton-operador" onclick="borrarUltimo()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0
+   0 24 24" fill="white">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.41 8.59 16 7.17 12.83 10.34 9.66 7.17 8.24 8.59
+   11.41 11.76 8.24 14.93 9.66 16.34 12.83 13.17 16 16.34 17.41 14.93 14.24
+   11.76z"/> <path d="M20 5H9.24c-.66 0-1.28.26-1.76.73L2 11.24l5.48
+   5.51c.48.47 1.1.73 1.76.73H20c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0
+   10H9.24l-4.95-5 4.95-5H20v10z"/>
+    </svg>
+    </button>
+    <button class="boton" onclick="agregarNumero('/')">/</button>
+    <button class="boton" onclick="agregarNumero('*')">*</button>
+    <button class="boton" onclick="agregarNumero('-')">-</button>
+    <button class="boton" onclick="agregarNumero('+')">+</button>
+   
+    </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+   </body>
+   </html>
